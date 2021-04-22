@@ -1,18 +1,4 @@
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {
-inlineMath: [['$','$'], ['\\(','\\)']],
-processEscapes: true},
-jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
-extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
-TeX: {
-extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
-equationNumbers: {
-autoNumber: "AMS"
-}
-}
-});
-</script>
+
 
 # HOG
 HOG - Histogram of Oriented Gradients là một feature descriptor thường được sử dụng để trích xuất các đặc trưng của bức ảnh. Nó được dùng khá nhiều trong computer vision với những ứng dụng chính như sau:
@@ -41,3 +27,19 @@ Dưới đây là một số phương pháp chuẩn hóa chính:
 - Chuẩn hóa gamma/power : lấy $\log(p)$ của mỗi pixel p trong ảnh đầu vào. Tuy nhiên Dalal và Triggs chứng minh phương pháp này có thể ảnh hưởng đến performance.
 - Chuẩn hoá căn bậc hai (square root normalization): lấy $ \sqrt(p) $ của mỗi pixel p trong hình ảnh đầu vào. Chuẩn hóa căn bậc hai thường làm tăng độ chính xác hơn là giảm.
 - Chuẩn hóa phương sai (variance normalization): Ở đây, chúng ta tính cần giá trị cường độ điểm ảnh trung bình $\mu $ và độ lệch tiêu chuẩn $\sigma $ của hình ảnh đầu vào. Với mỗi điểm ảnh ta trừ đi giá trị trung bình của cường độ điểm ảnh và sau đó được chuẩn hóa bằng cách chia cho độ lệch chuẩn: $ p' = (p - \mu) / \sigma $
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']],
+processEscapes: true},
+jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+equationNumbers: {
+autoNumber: "AMS"
+}
+}
+});
+</script>
