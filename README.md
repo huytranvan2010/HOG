@@ -27,7 +27,7 @@ Cũng giống các bài toán khác đầu tiên chúng ta cần resize kích th
 ![Preprocessing](/images/preprocessing.jpg)
 Việc chuẩn hóa ảnh là tùy chọn, trong một só trường hộ nó có thể cải thiện performance của HOG descriptor. Nếu dùng ảnh màu thay cho ảnh xám hiệu suất cũng cải thiện đôi chút.
 Dưới đây là một số phương pháp chuẩn hóa chính:
-- Chuẩn hóa gamma/power : lấy $ \log(p) $ của mỗi pixel p trong ảnh đầu vào. Tuy nhiên Dalal và Triggs chứng minh phương pháp này có thể ảnh hưởng đến performance.
+- Chuẩn hóa gamma/power : lấy $$ \log(p) $$ của mỗi pixel p trong ảnh đầu vào. Tuy nhiên Dalal và Triggs chứng minh phương pháp này có thể ảnh hưởng đến performance.
 - Chuẩn hoá căn bậc hai (square root normalization): lấy $ \sqrt(p) $ của mỗi pixel p trong hình ảnh đầu vào. Chuẩn hóa căn bậc hai thường làm tăng độ chính xác hơn là giảm.
 - Chuẩn hóa phương sai (variance normalization): Ở đây, chúng ta tính cần giá trị cường độ điểm ảnh trung bình $\mu $ và độ lệch tiêu chuẩn $\sigma $ của hình ảnh đầu vào. Với mỗi điểm ảnh ta trừ đi giá trị trung bình của cường độ điểm ảnh và sau đó được chuẩn hóa bằng cách chia cho độ lệch chuẩn: $ p' = (p - \mu) / \sigma $
 
