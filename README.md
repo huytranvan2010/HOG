@@ -1,3 +1,19 @@
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']],
+processEscapes: true},
+jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
+extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
+TeX: {
+extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
+equationNumbers: {
+autoNumber: "AMS"
+}
+}
+});
+</script>
+
 # HOG
 HOG - Histogram of Oriented Gradients là một feature descriptor thường được sử dụng để trích xuất các đặc trưng của bức ảnh. Nó được dùng khá nhiều trong computer vision với những ứng dụng chính như sau:
 - Nhận diện người (human detection). HOG lần đầu tiên được giới thiệu bởi Dalal và Triggs [Histograms of Oriented Gradients for Human Detection](https://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf)
